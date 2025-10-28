@@ -1,7 +1,5 @@
-// Classe Abstrata: DefaultEstadoPedido
 public abstract class DefaultEstadoPedido implements EstadoPedido {
 
-    // Implementação padrão: Ação não permitida neste estado
     @Override
     public void pagar(Pedido pedido) {
         throw new IllegalStateException("Não é possível pagar um pedido no estado: " + getNome());
